@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/druid/druid.iml" filepath="$PROJECT_DIR$/druid/druid.iml" />
+      <module fileurl="file://$PROJECT_DIR$/log4jdbc/log4jdbc.iml" filepath="$PROJECT_DIR$/log4jdbc/log4jdbc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot-web.iml" filepath="$PROJECT_DIR$/springboot-web.iml" />
+    </modules>
+  </component>
+</project>
