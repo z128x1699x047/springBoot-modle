@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zxx.gs.mapper.LabourProjectMapper">
+
+    <resultMap id="baseResultMap" type="com.zxx.gs.entity.LabourProject">
+        <id column="id" property="id"/>
+        <result column="name" property="name"/>
+        <result column="part_label" property="partLable"/>
+        <result column="price" property="price"/>
+        <result column="is_system_standard" property="isSystemStandrd"/>
+    </resultMap>
+    <sql id="baseSelect">
+        id,name,part_label,price,is_system_standard
+    </sql>
+    <select id="queryLabourProject" resultMap="baseResultMap">
+        select
+        <include refid="baseSelect"/>
+        from tb_labourproject_bak limit 10
+    </select>
+
+</mapper>
